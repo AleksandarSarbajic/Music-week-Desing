@@ -1,0 +1,41 @@
+@import "/node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "/node_modules/bootstrap/scss/_variables";
+@import "/node_modules/bootstrap/scss/_functions";
+// @import "/node_modules/bootstrap/scss/_nav";
+// @import "/node_modules/bootstrap/scss/_dropdown";
+
+// @import "/node_modules/bootstrap/scss/_navbar";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ddd;
+  font-family: "Rubik", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+p {
+  font-size: 1.6rem;
+}
+.section-1 {
+  margin-top: 9rem;
+}
+
+.text1 {
+  color: #fff;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.text-padding {
+  margin-bottom: 3rem;
+  transform: rotate(-5deg);
+  background-color: #111;
+}
+.text-padding-2 {
+  background-color: purple;
+  transform: translate(50%) rotate(-2deg);
+}
