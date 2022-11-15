@@ -2,10 +2,13 @@
   "name": "practice-js-bs",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "src/index.html",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "start": "parcel serve src/index.html --public-url / --dist-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "parcel src/index.html"
   },
   "author": "",
   "license": "ISC",
