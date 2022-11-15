@@ -1,0 +1,133 @@
+:root {
+  --color-brand--1: #e0e0e0;
+  --color-brand--2: #831adc;
+  --color-dark--1: #000;
+}
+//nav
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  padding-right: 7rem;
+}
+.hero_nav {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+.hero_nav_item {
+  list-style: none;
+  // text-align: left;
+  position: relative;
+}
+.hero_link:link,
+.hero_link:visited {
+  text-decoration: none;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hero_link::after {
+  content: '';
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero_link:hover,
+.hero_link:active {
+  font-weight: 700;
+  color: #831adc;
+}
+//bg hero
+.bg_hero_img {
+  background-image: url('/img/hero-bg.png');
+
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 9rem;
+}
+
+//hero-image
+.hero_man {
+  width: 100%;
+  height: 100%;
+}
+//hero logo
+.hero_img_div {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.hero_img_logo {
+  transform: translate(25%);
+}
+
+//hero text box
+.hero_all-text {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 9rem;
+}
+
+.hero_text_box {
+  margin-top: 4rem;
+}
+//curved text
+.hero_text-1,
+.hero_text-2 {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  font-weight: 700;
+  font-family: 'Monda';
+  text-align: center;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+.hero_text-1 {
+  background-color: var(--color-dark--1);
+
+  transform: translate(-10%) rotate(-5deg);
+}
+.hero_text-2 {
+  background-color: var(--color-brand--2);
+
+  transform: translate(25%) rotate(-2deg);
+}
+
+.hero_text {
+  font-size: 2rem;
+  letter-spacing: 0px;
+  width: 55rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero_text_bold {
+  color: var(--color-brand--2);
+  font-weight: 700;
+}
+
+//arrow link
+.arrow_link {
+  transition: all 0.5s;
+}
+.arrow_link:link,
+.arrow_link:visited {
+  position: absolute;
+  bottom: 0;
+}
+.arrow_link:hover,
+.arrow_link:active {
+  transform: translateY(20%);
+}
+.parent_hero {
+  position: relative;
+}

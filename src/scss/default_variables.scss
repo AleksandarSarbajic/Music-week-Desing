@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color-brand--1);
+  font-family: 'Monda', sans-serif;
+  // font-family: 'Staatliches', cursive;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+:root {
+  --color-brand--1: #e0e0e0;
+  --color-brand--2: #831adc;
+  --color-dark--1: #000;
+}
