@@ -17,3 +17,15 @@ html {
   --color-brand--2: #831adc;
   --color-dark--1: #000;
 }
+.colored {
+  color: var(--color-brand--1);
+}
+.bold-700 {
+  font-weight: 700;
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 0.7rem 6rem;
+}
