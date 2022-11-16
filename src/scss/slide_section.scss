@@ -1,0 +1,66 @@
+.section-2-slider {
+  padding: 12rem 0 8rem 0;
+  background-image: url('/img/section_2_bg.png'), url('/img/section_2-mark.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, right;
+}
+.section-2-slider::after {
+  content: '';
+  top: 0;
+  right: 0;
+
+  background-position: right;
+}
+.slider-count {
+  font-size: 3.3rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #831adc;
+  font-weight: 700;
+  margin: 0 2rem 0 2rem;
+  text-align: right;
+}
+.arrows-slider {
+  margin-bottom: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.arrows-slider {
+  margin-right: 10rem;
+}
+.slide-text-curved-1,
+.slide-text-curved-2 {
+  font-size: 1.8rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  font-weight: 700;
+
+  text-align: center;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+.slide-text-curved-1 {
+  background-color: #000;
+
+  transform: rotate(-7deg) translate(20%) translateY(3rem);
+}
+.slide-text-curved-2 {
+  background-color: #831adc;
+
+  transform: rotate(2deg) translateY(4rem);
+}
+.slide-text {
+  font-size: 2.2rem;
+  letter-spacing: -1px;
+  text-align: left;
+  padding-top: 10rem;
+  line-height: 1.2;
+}
+.slide-circle {
+  padding-bottom: 4rem;
+  background-image: url('/img/slider_circle.png');
+  background-repeat: no-repeat;
+  background-position: top;
+}

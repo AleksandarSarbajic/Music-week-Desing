@@ -15,10 +15,18 @@ html {
 :root {
   --color-brand--1: #e0e0e0;
   --color-brand--2: #831adc;
+  --color-brand--2--light: #9913e1;
+
   --color-dark--1: #000;
 }
-.colored {
+.colored-1 {
   color: var(--color-brand--1);
+}
+.colored-2 {
+  color: var(--color-brand--2);
+}
+.colored-light {
+  color: var(--color-brand--2--light);
 }
 .bold-700 {
   font-weight: 700;
@@ -28,4 +36,19 @@ html {
   text-decoration: none;
   border-radius: 25px;
   padding: 0.7rem 6rem;
+}
+.arrow-slider-default {
+  border: none;
+  background: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.arrow-slider-default:hover {
+  transform: translate(1rem);
+}
+.padding-0 {
+  padding: 0 !important;
+}
+.heigth-for-col {
+  max-height: 26rem;
 }
