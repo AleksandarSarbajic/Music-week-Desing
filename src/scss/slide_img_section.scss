@@ -1,0 +1,36 @@
+.section-slide-img {
+  background-image: url('/img/section-4-bg.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.slide-img-right {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-text-curved-img-1,
+.slide-text-curved-img-2 {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  font-weight: 700;
+
+  text-align: center;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+.slide-text-curved-img-1 {
+  background-color: #000;
+  transform: rotate(3rem);
+}
+.slide-text-curved-img-2 {
+  background-color: #831adc;
+  transform: rotate(3rem);
+}
+.slide-img-text {
+  font-size: 1.9rem;
+  letter-spacing: -1px;
+  text-align: center;
+
+  line-height: 1.2;
+}
