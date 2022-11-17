@@ -1,0 +1,46 @@
+.break-seaction {
+  background-image: url('/img/section_break_line.png'),
+    url('/img/section_break_mark.png'), url('/img/break_circle.png');
+  background-position: left, top right, bottom right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  padding: 15rem 0;
+}
+.break-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.break-title {
+  font-size: 9.6rem;
+  line-height: 93px;
+  font-weight: 400;
+  font-family: 'Staatliches', cursive;
+}
+
+.break-text {
+  font-size: 2rem;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.break-text-curved-1,
+.break-text-curved-2 {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.4rem 2rem 0.4rem 2rem;
+}
+.break-text-curved-1 {
+  background-color: #000;
+  transform: rotate(-5deg);
+  margin-bottom: 1.8rem;
+}
+.break-text-curved-2 {
+  background-color: #831adc;
+  transform: rotate(-2deg) translateX(45%);
+  margin-bottom: 3rem;
+}
