@@ -33,6 +33,7 @@ html {
 }
 .btn:link,
 .btn:visited {
+  display: inline-block;
   text-decoration: none;
   border-radius: 25px;
   padding: 0.7rem 6rem;
