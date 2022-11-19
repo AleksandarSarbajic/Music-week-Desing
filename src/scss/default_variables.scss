@@ -69,18 +69,6 @@ html {
 .arrow-animation-right:hover {
   transform: translateX(1.5rem);
 }
-@media (min-width: 30em) {
-  html {
-    font-size: 50%;
-  }
-}
-@media (min-width: 50em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (min-width: 75em) {
-  html {
-    font-size: 62.5%;
-  }
+.marginos {
+  margin: 0 auto;
 }

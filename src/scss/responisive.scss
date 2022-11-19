@@ -1,0 +1,25 @@
+//1200px
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25% !important;
+  }
+}
+
+// @media (max-width: 48em) {
+//   html {
+//     font-size: 50%;
+//   }
+// }
+
+//992px
+@media (max-width: 62em) {
+  .hero_nav {
+    display: none;
+  }
+  html {
+    font-size: 50% !important;
+  }
+  .break-text-curved-2 {
+    transform: rotate(-2deg) translateX(15%);
+  }
+}

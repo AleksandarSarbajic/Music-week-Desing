@@ -11,7 +11,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="scss/styles.scss" />
+
     <script defer type="module" src="js/main.js"></script>
+
     <title>Music Week</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
           <div class="container parent_hero">
             <nav class="nav">
               <img class="hero_logo_icon" src="/img/HERO_LOGO_ICON.png" />
-              <ul class="hero_nav">
+              <ul class="hero_nav mobile-hidden">
                 <li class="hero_nav_item">
                   <a href="#" class="hero_link">home</a>
                 </li>
@@ -35,6 +37,22 @@
                   <a href="#" class="hero_link">About</a>
                 </li>
               </ul>
+              <div style="width: 10rem" class="div">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-1 h-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
             </nav>
             <div class="hero_img_div">
               <img src="/img/HERO_LOGO.png" alt="" class="hero_img_logo" />
@@ -73,12 +91,12 @@
     <section class="hero-section-under">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-4">
+          <div class="col-md-6 col-xl-5">
             <p class="hero-under-header">
               <span class="colored">party</span> your heart out!
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
             <p class="hero-under-text">
               <span class="colored-1 bold-700">Lorem ipsum dolor sit amet</span>
               consectetur adip isicing elit, sed do ei usmod tempor incididunt
@@ -91,108 +109,88 @@
       </div>
     </section>
     <section class="section-2-slider section" id="section-scroll-to">
-      <div class="container">
-        <div class="slider">
-          <div class="arrows-slider">
-            <button
-              class="arrow-slider arrow-slider-default hidden arrow-slide-left arrow-animation-left"
-              data-set="1"
-            >
-              <img
-                src="/img/arrow_21-left.png"
-                alt="arrow to move slider"
-                class="arrow-slider-img"
-              />
-            </button>
-            <span class="slider-count">01/03</span>
-            <button
-              class="arrow-slider-default arrow-slider arrow-slide-right arrow-animation-right"
-              data-set="2"
-            >
-              <img
-                src="/img/arrow_21-right.png"
-                alt="arrow to move slider"
-                class="arrow-slider-img"
-              />
-            </button>
+      <div class="slider">
+        <div class="arrows-slider">
+          <button
+            class="arrow-slider arrow-slider-default hidden arrow-slide-left arrow-animation-left"
+            data-set="1"
+          >
+            <img
+              src="/img/arrow_21-left.png"
+              alt="arrow to move slider"
+              class="arrow-slider-img"
+            />
+          </button>
+          <span class="slider-count">01/03</span>
+          <button
+            class="arrow-slider-default arrow-slider arrow-slide-right arrow-animation-right"
+            data-set="2"
+          >
+            <img
+              src="/img/arrow_21-right.png"
+              alt="arrow to move slider"
+              class="arrow-slider-img"
+            />
+          </button>
+        </div>
+        <div class="slide row justify-content-center">
+          <div class="col-md-6 slide-circle">
+            <p class="slide-text-curved-1">
+              a place to quench your thirst for music
+            </p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <div class="slide row justify-content-center">
-            <div class="col-md-5 slide-circle">
-              <p class="slide-text-curved-1">
-                a place to quench your thirst for music
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="col-md-5 padding-slide">
-              <p class="slide-text-curved-2">
-                party out with us for three days!
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
+          <div class="col-md-6 padding-slide">
+            <p class="slide-text-curved-2">party out with us for three days!</p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <div class="slide row justify-content-center">
-            <div class="col-md-5 slide-circle">
-              <p class="slide-text-curved-1">
-                a place to quench your thirst for music
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="col-md-5 padding-slide">
-              <p class="slide-text-curved-2">
-                party out with us for three days!
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
+        </div>
+        <div class="slide row justify-content-center">
+          <div class="col-md-6 slide-circle">
+            <p class="slide-text-curved-1">
+              a place to quench your thirst for music
+            </p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
           </div>
-          <div class="slide row justify-content-center">
-            <div class="col-md-5 slide-circle">
-              <p class="slide-text-curved-1">
-                a place to quench your thirst for music
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="col-md-5 padding-slide">
-              <p class="slide-text-curved-2">
-                party out with us for three days!
-              </p>
-              <p class="slide-text">
-                <span class="bold-700 colored-2"
-                  >Lorem ipsum dolor sit amet</span
-                >
-                consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
-                ut labore et dolore magna aliqua.
-              </p>
-            </div>
+          <div class="col-md-6 padding-slide">
+            <p class="slide-text-curved-2">party out with us for three days!</p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="slide row justify-content-center">
+          <div class="col-md-6 slide-circle">
+            <p class="slide-text-curved-1">
+              a place to quench your thirst for music
+            </p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col-md-6 padding-slide">
+            <p class="slide-text-curved-2">party out with us for three days!</p>
+            <p class="slide-text">
+              <span class="bold-700 colored-2">Lorem ipsum dolor sit amet</span>
+              consectetur adipisicing elit, sed do ei usmod tempor incidi dunt
+              ut labore et dolore magna aliqua.
+            </p>
           </div>
         </div>
       </div>
@@ -286,92 +284,90 @@
     <section class="section-slide-img section">
       <div class="row">
         <div class="col-md-6 align-self-center">
-          <div class="row justify-content-center">
-            <div class="col-md-7 slider-img">
-              <div class="slide-img">
-                <div class="slide-circle-2">
-                  <p class="slide-text-curved-img-1">
-                    a place to quench your thirst for music
-                  </p>
-                  <p class="slide-text-curved-img-2">
-                    party out with us for three days!
-                  </p>
-                  <p class="slide-img-text">
-                    <span class="colored-light bold-700"
-                      >Lorem ipsum dolor sit amet</span
-                    >
-                    consectetur adip isicing elit, sed do ei usmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-                <div class="center-btn">
-                  <a href="#" class="btn btn-tickets">learn More</a>
-                </div>
+          <div class="col-md-10 slider-img marginos">
+            <div class="slide-img">
+              <div class="slide-circle-2">
+                <p class="slide-text-curved-img-1">
+                  a place to quench your thirst for music
+                </p>
+                <p class="slide-text-curved-img-2">
+                  party out with us for three days!
+                </p>
+                <p class="slide-img-text">
+                  <span class="colored-light bold-700"
+                    >Lorem ipsum dolor sit amet</span
+                  >
+                  consectetur adip isicing elit, sed do ei usmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
-              <div class="slide-img">
-                <div class="slide-circle-2">
-                  <p class="slide-text-curved-img-1">
-                    a place to quench your thirst for music
-                  </p>
-                  <p class="slide-text-curved-img-2">
-                    party out with us for three days!
-                  </p>
-                  <p class="slide-img-text">
-                    <span class="colored-light bold-700"
-                      >Lorem ipsum dolor sit amet</span
-                    >
-                    consectetur adip isicing elit, sed do ei usmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-                <div class="center-btn">
-                  <a href="#" class="btn btn-tickets">learn More</a>
-                </div>
+              <div class="center-btn">
+                <a href="#" class="btn btn-tickets">learn More</a>
               </div>
-              <div class="slide-img">
-                <div class="slide-circle-2">
-                  <p class="slide-text-curved-img-1">
-                    a place to quench your thirst for music
-                  </p>
-                  <p class="slide-text-curved-img-2">
-                    party out with us for three days!
-                  </p>
-                  <p class="slide-img-text">
-                    <span class="colored-light bold-700"
-                      >Lorem ipsum dolor sit amet</span
-                    >
-                    consectetur adip isicing elit, sed do ei usmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-                <div class="center-btn">
-                  <a href="#" class="btn btn-tickets">learn More</a>
-                </div>
+            </div>
+            <div class="slide-img">
+              <div class="slide-circle-2">
+                <p class="slide-text-curved-img-1">
+                  a place to quench your thirst for music
+                </p>
+                <p class="slide-text-curved-img-2">
+                  party out with us for three days!
+                </p>
+                <p class="slide-img-text">
+                  <span class="colored-light bold-700"
+                    >Lorem ipsum dolor sit amet</span
+                  >
+                  consectetur adip isicing elit, sed do ei usmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
               </div>
-              <div class="center-arrows">
-                <button
-                  class="arrow-slider-default arrow-slider-img-left arrow-animation-left"
-                  id="slide1"
-                  data-set="1"
-                >
-                  <img
-                    src="/img/arrow_21-left.png"
-                    alt="arrow to move slider"
-                    class="arrow-slider-img"
-                  />
-                </button>
-                <button
-                  class="arrow-slider-default arrow-slider-img-right arrow-animation-right"
-                  id="slide2"
-                  data-set="2"
-                >
-                  <img
-                    src="/img/arrow_21-right.png"
-                    alt="arrow to move slider"
-                    class="arrow-slider-img"
-                  />
-                </button>
+              <div class="center-btn">
+                <a href="#" class="btn btn-tickets">learn More</a>
               </div>
+            </div>
+            <div class="slide-img">
+              <div class="slide-circle-2">
+                <p class="slide-text-curved-img-1">
+                  a place to quench your thirst for music
+                </p>
+                <p class="slide-text-curved-img-2">
+                  party out with us for three days!
+                </p>
+                <p class="slide-img-text">
+                  <span class="colored-light bold-700"
+                    >Lorem ipsum dolor sit amet</span
+                  >
+                  consectetur adip isicing elit, sed do ei usmod tempor
+                  incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="center-btn">
+                <a href="#" class="btn btn-tickets">learn More</a>
+              </div>
+            </div>
+            <div class="center-arrows">
+              <button
+                class="arrow-slider-default arrow-slider-img-left arrow-animation-left"
+                id="slide1"
+                data-set="1"
+              >
+                <img
+                  src="/img/arrow_21-left.png"
+                  alt="arrow to move slider"
+                  class="arrow-slider-img"
+                />
+              </button>
+              <button
+                class="arrow-slider-default arrow-slider-img-right arrow-animation-right"
+                id="slide2"
+                data-set="2"
+              >
+                <img
+                  src="/img/arrow_21-right.png"
+                  alt="arrow to move slider"
+                  class="arrow-slider-img"
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -389,7 +385,7 @@
               <span class="colored-light">party like</span> there's no tomorrow
             </h2>
           </div>
-          <div class="col-md-5 align-self-center">
+          <div class="col-md-6 align-self-center">
             <p class="break-text-curved-1">
               a place to quench your thirst for music
             </p>
@@ -409,21 +405,19 @@
           <img src="/img/party-img.png" alt="" class="party-img" />
         </div>
         <div class="col-md-6 align-self-center party-right-box padding-0">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              <h2 class="party-title">
-                <span class="colored-1">party</span> your heart out!
-              </h2>
-              <p class="party-text">
-                <span class="colored-1 bold-700"
-                  >Lorem ipsum dolor sit amet
-                </span>
-                consectetur adip isicing elit, sed do ei usmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
-                nostrud exercitation.
-              </p>
-              <a href="#" class="btn btn-hero-new">learn More</a>
-            </div>
+          <div class="col-md-8 marginos">
+            <h2 class="party-title">
+              <span class="colored-1">party</span> your heart out!
+            </h2>
+            <p class="party-text">
+              <span class="colored-1 bold-700"
+                >Lorem ipsum dolor sit amet
+              </span>
+              consectetur adip isicing elit, sed do ei usmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam quis
+              nostrud exercitation.
+            </p>
+            <a href="#" class="btn btn-hero-new">learn More</a>
           </div>
         </div>
       </div>
@@ -569,7 +563,7 @@
             <div class="col-md-3">
               <img src="/img/HERO_LOGO_ICON.png" alt="" class="footer-logo" />
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
               <p class="footer-title bold-700">Fast Links</p>
               <ul class="footer-list">
                 <li class="footer-list-item">
