@@ -5,12 +5,6 @@
   }
 }
 
-// @media (max-width: 48em) {
-//   html {
-//     font-size: 50%;
-//   }
-// }
-
 //992px
 @media (max-width: 62em) {
   .hero_nav {
@@ -32,5 +26,56 @@
   }
   .padding-slide {
     padding-top: 2rem;
+  }
+}
+@media (max-width: 48em) {
+  .section-slide-img {
+    padding-top: 8rem;
+  }
+  .padding-img-slider {
+    padding-bottom: 12rem;
+  }
+  .tickets-text {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .right-ticket {
+    margin: 0;
+  }
+  .btn-tickets:link,
+  .btn-tickets:visited {
+    // display: inline-flex;
+    // justify-content: center;
+  }
+  .btn-tickets {
+    display: flex;
+    justify-content: center;
+  }
+  .break-text-curved-2 {
+    transform: rotate(-2deg) translateX(50%);
+  }
+  .break-text-curved-1 {
+    transform: rotate(-4deg) translateX(20%);
+  }
+  .john-text:after {
+    height: 30%;
+    z-index: -1;
+    bottom: -2rem;
+  }
+  .john-doe-arrow-left {
+    bottom: 0;
+  }
+  .john-doe-arrow-right {
+    bottom: 0;
+  }
+
+  .slider-jhon {
+    height: 70rem;
+  }
+  .john-doe-section {
+    padding: 13rem 0 8rem;
+  }
+  .margin-form {
+    margin-bottom: 8rem;
   }
 }
