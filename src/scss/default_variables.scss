@@ -43,6 +43,7 @@ html {
   background: none;
   transition: all 0.4s;
   cursor: pointer;
+  z-index: 9999;
 }
 .arrow-slider-default:hover {
   transform: translate(1rem);
@@ -52,4 +53,7 @@ html {
 }
 .heigth-for-col {
   max-height: 26rem;
+}
+.hidden {
+  opacity: 0;
 }

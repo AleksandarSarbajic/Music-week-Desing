@@ -119,15 +119,16 @@
 
 //arrow link
 .arrow_link {
+  display: inline-block;
+  border: none;
+  background: none;
   transition: all 0.5s;
-}
-.arrow_link:link,
-.arrow_link:visited {
+
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
-.arrow_link:hover,
-.arrow_link:active {
+.arrow_link:hover {
   transform: translateY(20%);
 }
 .parent_hero {
