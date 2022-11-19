@@ -1,3 +1,4 @@
+'use strict';
 // import * as bootstrap from 'bootstrap';
 //Smooth scroll
 
@@ -118,6 +119,7 @@ btnSlideFirstLeft.addEventListener('click', function () {
   btnFuncMinus();
   sliderTo(curSlide, slidesFirst);
   slideCounter(curSlide);
+  btnRev(curSlide);
   console.log(curSlide);
 });
 
@@ -143,3 +145,39 @@ btnSlideThirdLeft.addEventListener('click', function () {
   btnFuncMinusThird();
   sliderTo(curSlideThird, slidesThird);
 });
+
+//Observer on sections
+
+const allSections = document.querySelectorAll('.section');
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section-hidden');
+  observer.unobserve(entry.target);
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section-hidden');
+});
+
+// reveal section intersection
+// const allSelections = document.querySelectorAll('.section');
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove('section-hidden');
+//   observer.unobserve(entry.target);
+// };
+
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.15,
+// });
+// allSelections.forEach(function (section) {
+//   sectionObserver.observe(section);
+//   section.classList.add('section-hidden');
+// });

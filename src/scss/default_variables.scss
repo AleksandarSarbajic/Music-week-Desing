@@ -37,6 +37,7 @@ html {
   text-decoration: none;
   border-radius: 25px;
   padding: 0.7rem 6rem;
+  transition: all 0.3s;
 }
 .arrow-slider-default {
   border: none;
@@ -45,9 +46,7 @@ html {
   cursor: pointer;
   z-index: 9999;
 }
-.arrow-slider-default:hover {
-  transform: translate(1rem);
-}
+
 .padding-0 {
   padding: 0 !important;
 }
@@ -56,4 +55,17 @@ html {
 }
 .hidden {
   opacity: 0;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.arrow-animation-left:hover {
+  transform: translateX(-1.5rem);
+}
+.arrow-animation-right:hover {
+  transform: translateX(1.5rem);
 }

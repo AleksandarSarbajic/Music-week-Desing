@@ -51,6 +51,14 @@
   text-align: center;
   border: 4px solid var(--color-brand--2);
 }
+.btn-tickets:hover,
+.btn-tickets:active {
+  transform: translateY(-1rem);
+  color: var(--color-brand--1);
+  border-color: #a32be4;
+  background-color: #a32be4;
+  box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.1);
+}
 .bg-tickets {
   background-image: url('/img/section-3-mark.png');
   background-repeat: no-repeat;
@@ -62,11 +70,11 @@
 .tickets-text-margin {
   margin-bottom: 12.8rem;
 }
-// .tickets-train-img {
-//   // width: 100%;
-//   // height: 100%;
-//   // object-fit: contain;
-//   // transform: translateX(-50%);
-// }
+.tickets-train-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  // transform: translateX(-50%);
+}
 // // .overflow-visible {
 // // }

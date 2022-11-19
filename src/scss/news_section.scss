@@ -48,6 +48,13 @@
   padding: 1.1rem;
   border-radius: 25px;
   border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.form-btn:hover {
+  transform: translateY(-0.5rem);
+  background-color: #831adc;
+  color: #e0e0e0;
 }
 .form-message {
   padding-bottom: 26rem;
