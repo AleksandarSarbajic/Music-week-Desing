@@ -137,4 +137,12 @@
   .party-right-box {
     background-position: 10rem 0, 65rem 60rem;
   }
+  .hero-under-text {
+    text-align: center;
+  }
+}
+@media (max-width: 36em) {
+  .hero_img_logo {
+    width: 90%;
+  }
 }
