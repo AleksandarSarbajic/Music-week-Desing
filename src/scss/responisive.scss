@@ -28,9 +28,10 @@
     padding-top: 2rem;
   }
 }
+//762px
 @media (max-width: 48em) {
   .section-slide-img {
-    padding-top: 8rem;
+    padding-top: 12rem;
   }
   .padding-img-slider {
     padding-bottom: 12rem;
@@ -44,13 +45,15 @@
   }
   .btn-tickets:link,
   .btn-tickets:visited {
-    // display: inline-flex;
-    // justify-content: center;
+    // display: flex;
+    // justify-self: center;
+    display: block;
+
+    width: 30rem;
+
+    margin: 1rem auto;
   }
-  .btn-tickets {
-    display: flex;
-    justify-content: center;
-  }
+
   .break-text-curved-2 {
     transform: rotate(-2deg) translateX(50%);
   }
@@ -77,5 +80,61 @@
   }
   .margin-form {
     margin-bottom: 8rem;
+  }
+  .tickets-right-head {
+    text-align: center;
+  }
+  .hero-section-under {
+    background-position: -12rem 30rem;
+  }
+  .btn-hero-new:link,
+  .btn-hero-new:visited {
+    display: block;
+
+    width: 25rem;
+
+    margin: auto;
+  }
+  .hero-under-header {
+    text-align: center;
+  }
+  .nav {
+    padding: 0;
+  }
+  .hero_img_div {
+    margin-bottom: 3rem;
+  }
+  .bg_hero_img {
+    padding: 0;
+  }
+  .parent_hero {
+    padding-bottom: 12rem;
+  }
+  .arrow_link {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -5rem;
+  }
+  .arrow_link:hover {
+    transform: translate(-50%, -30%);
+  }
+  .footer-link:link,
+  .footer-link:visited,
+  .footer-title {
+    display: block;
+    text-align: center;
+  }
+  .btn-footer:link,
+  .btn-footer:visited {
+    display: block;
+    width: 30rem;
+    margin: auto;
+  }
+  .footer-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .party-right-box {
+    background-position: 10rem 0, 65rem 60rem;
   }
 }
