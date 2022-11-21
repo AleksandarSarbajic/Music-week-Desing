@@ -183,12 +183,26 @@ allSections.forEach(function (section) {
 // });
 
 const mobileNav = document.querySelector('.hero_nav');
+const nav = document.querySelector('.nav');
 
 const btnMobile = document.querySelector('.mobile-nav');
 
 const heroItemOne = document.querySelectorAll('.hero_nav_item');
 
+const navPopIn = function (slide) {
+  heroItemOne.forEach(
+    (s, i) => (s.style.transform = `translateY(-${200 * (i - slide)}%)`)
+  );
+};
+
+const navPopOut = function () {
+  heroItemOne.forEach(s => (s.style.transform = `translateY(0%)`));
+};
+navPopIn(1);
+
 btnMobile.addEventListener('click', function () {
   mobileNav.classList.toggle('mobile-hidden');
-  heroItemOne.forEach(el => el.classList.toggle('mobile-hidden-item'));
+  //just so i can change icons
+  nav.classList.toggle('nav-mobile');
+  navPopOut();
 });

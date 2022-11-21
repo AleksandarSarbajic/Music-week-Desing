@@ -29,12 +29,10 @@
   }
   .mobile-hidden {
     opacity: 0 !important;
-    transform: translateX(100%);
+    // display: none;
+    transform: translateY(-100%);
   }
-  .mobile-hidden-item {
-    opacity: 0 !important;
-    transform: translateX(100%);
-  }
+
   .hero_nav {
     // display: none;
     // opacity: 0;
@@ -48,16 +46,26 @@
     gap: 1rem;
     height: 30rem;
     background-color: #111;
-    padding-top: 8rem;
     opacity: 0.99;
+    padding-top: 8rem;
     // border-radius: 4px;
-    transition: transform 1s, opacity 1s;
+    transition: transform 2s, opacity 2s;
   }
   .hero_link:link,
   .hero_link:visited {
     // display: block;
     // border-bottom: 2px solid black;
+    // padding-bottom: 1.2rem;
+
     color: #e0e0e0;
+  }
+  .hero_link:hover,
+  .hero_link:active {
+    // display: block;
+    // border-bottom: 2px solid black;
+    // padding-bottom: 1.2rem;
+
+    color: #831adc;
   }
   .hero_logo_icon {
     z-index: 9999;
@@ -67,12 +75,23 @@
     width: 100%;
     justify-content: flex-end;
     padding-right: 3rem;
-    // background-color: #111;
-    transition: transform 1s, opacity 1s;
-    // border-bottom: 2px solid black;
+
+    transition: transform 2s, opacity 2s;
   }
   // .hero-item-1 {
   //   transform: translateY(-100%);
+  // }
+  // .hero-item-1 {
+  //   transform: translateY(-300%);
+  // }
+  // .hero-item-2 {
+  //   transform: translateY(-250%);
+  // }
+  // .hero-item-3 {
+  //   transform: translateY(-200%);
+  // }
+  // .hero-item-4 {
+  //   transform: translateY(-150%);
   // }
   .mobile-nav {
     display: block;
@@ -83,8 +102,17 @@
     cursor: pointer;
     z-index: 9999;
   }
+  .close {
+    display: none;
+  }
+  .nav-mobile .hamburger-nav[name='icons-hamburger-close'] {
+    display: block;
+  }
+  .nav-mobile .hamburger-nav[name='icons-hamburger-open'] {
+    display: none;
+  }
 }
-//762px
+//768px
 @media (max-width: 48em) {
   .section-slide-img {
     padding-top: 12rem;
@@ -196,6 +224,9 @@
   .hero-under-text {
     text-align: center;
   }
+  .hero_nav {
+    width: 100%;
+  }
 }
 @media (max-width: 36em) {
   .hero_img_logo {
@@ -258,6 +289,11 @@
   .row > * {
     padding-right: 0 !important;
   }
+  .hero_nav {
+    height: 110vh;
+    padding-top: 20rem;
+    top: -8rem;
+  }
 }
 
 @media (max-width: 27em) {
@@ -293,7 +329,9 @@
   }
   .hero_nav {
     right: 0;
-    height: 100vh;
+    top: -8rem;
+    height: 106.5vh;
+    padding-top: 20rem;
   }
   .hero_nav_item {
     padding-right: 1rem;
