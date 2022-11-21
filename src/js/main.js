@@ -183,6 +183,8 @@ allSections.forEach(function (section) {
 // });
 
 const mobileNav = document.querySelector('.hero_nav');
+const openIcon = document.querySelector('.hamburger-nav-open');
+const closeIcon = document.querySelector('.hamburger-nav-close');
 const nav = document.querySelector('.nav');
 
 const btnMobile = document.querySelector('.mobile-nav');
@@ -198,11 +200,13 @@ const navPopIn = function (slide) {
 const navPopOut = function () {
   heroItemOne.forEach(s => (s.style.transform = `translateY(0%)`));
 };
-navPopIn(1);
 
 btnMobile.addEventListener('click', function () {
   mobileNav.classList.toggle('mobile-hidden');
+  navPopIn(1);
   //just so i can change icons
+  openIcon.classList.toggle('open');
+  closeIcon.classList.toggle('close');
   nav.classList.toggle('nav-mobile');
   navPopOut();
 });

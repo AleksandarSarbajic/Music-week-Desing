@@ -105,12 +105,15 @@
   .close {
     display: none;
   }
-  .nav-mobile .hamburger-nav[name='icons-hamburger-close'] {
-    display: block;
-  }
-  .nav-mobile .hamburger-nav[name='icons-hamburger-open'] {
+  .open {
     display: none;
   }
+  // .nav-mobile .hamburger-nav[name='icons-hamburger-close'] {
+  //   display: block;
+  // }
+  // .nav-mobile .hamburger-nav[name='icons-hamburger-open'] {
+  //   display: none;
+  // }
 }
 //768px
 @media (max-width: 48em) {
