@@ -181,3 +181,14 @@ allSections.forEach(function (section) {
 //   sectionObserver.observe(section);
 //   section.classList.add('section-hidden');
 // });
+
+const mobileNav = document.querySelector('.hero_nav');
+
+const btnMobile = document.querySelector('.mobile-nav');
+
+const heroItemOne = document.querySelectorAll('.hero_nav_item');
+
+btnMobile.addEventListener('click', function () {
+  mobileNav.classList.toggle('mobile-hidden');
+  heroItemOne.forEach(el => el.classList.toggle('mobile-hidden-item'));
+});
