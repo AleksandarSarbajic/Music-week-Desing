@@ -10,7 +10,7 @@ body {
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 :root {
   --color-brand--1: #e0e0e0;
