@@ -1,9 +1,19 @@
 'use strict';
 // import * as bootstrap from 'bootstrap';
-//Smooth scroll
-
-const btnSctollTo = document.querySelector('.btn-scroll-to');
+//sections
 const sectionSlide = document.querySelector('#section-scroll-to');
+const sectionHero = document.querySelector('#hero-scroll');
+const sectionEvent = document.querySelector('#event-section');
+const sectionTickets = document.querySelector('#tickets-section');
+const sectionNews = document.querySelector('#news-scroll');
+
+//btns
+const btnSctollTo = document.querySelector('.btn-scroll-to');
+const btnHero = document.querySelector('.home-link');
+const btnAbout = document.querySelector('.about-link');
+const btnEvent = document.querySelector('.event-link');
+const btnTickets = document.querySelector('.tickets-link');
+const btnNews = document.querySelector('.news-link');
 
 //slider first
 const slidesFirst = document.querySelectorAll('.slide');
@@ -23,6 +33,22 @@ const btnSlideThirdLeft = document.querySelector('.john-doe-arrow-left');
 //smooth function
 btnSctollTo.addEventListener('click', function () {
   sectionSlide.scrollIntoView({ behavior: 'smooth' });
+});
+
+btnHero.addEventListener('click', function () {
+  sectionHero.scrollIntoView({ behavior: 'smooth' });
+});
+
+btnEvent.addEventListener('click', function () {
+  sectionEvent.scrollIntoView({ behavior: 'smooth' });
+});
+
+btnTickets.addEventListener('click', function () {
+  sectionTickets.scrollIntoView({ behavior: 'smooth' });
+});
+
+btnNews.addEventListener('click', function () {
+  sectionNews.scrollIntoView({ behavior: 'smooth' });
 });
 //First colloseum
 const maxSlide = slidesFirst.length;

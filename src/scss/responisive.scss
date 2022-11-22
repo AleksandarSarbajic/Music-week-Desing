@@ -101,6 +101,9 @@
     z-index: -1;
     bottom: -3rem;
   }
+  .party-right-box {
+    background-position: 10rem 0, 40rem 60rem;
+  }
 }
 //768px
 @media (max-width: 48em) {
@@ -190,15 +193,19 @@
   .arrow_link:hover {
     transform: translate(-50%, -30%);
   }
-  .footer-link:link,
-  .footer-link:visited,
+  .footer-link,
   .footer-title {
     display: block;
     text-align: center;
   }
+  .footer-list-item {
+    display: flex;
+    justify-content: center;
+  }
   .btn-footer:link,
   .btn-footer:visited {
     display: block;
+    justify-self: center;
     width: 30rem;
     margin: auto;
   }
@@ -325,6 +332,9 @@
   }
   .footer-section {
     background-position: 90% 100%, -50% 100%;
+  }
+  .hero-section-under {
+    background-position: -30rem 35rem;
   }
 }
 @media (max-width: 23em) {

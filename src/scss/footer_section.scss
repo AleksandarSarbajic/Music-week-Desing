@@ -7,15 +7,17 @@
 .footer-list-item {
   list-style: none;
 }
-.footer-link:link,
-.footer-link:visited,
+.footer-link,
 .footer-title {
+  border: none;
+  background: none;
   display: inline-block;
   text-decoration: none;
   font-size: 2.5rem;
   line-height: 36px;
   color: #000000;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 .btn-footer:link,
 .btn-footer:visited {
