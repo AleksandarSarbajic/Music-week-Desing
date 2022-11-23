@@ -1,11 +1,12 @@
 'use strict';
-// import * as bootstrap from 'bootstrap';
+
 //sections
 const sectionSlide = document.querySelector('#section-scroll-to');
 const sectionHero = document.querySelector('#hero-scroll');
 const sectionEvent = document.querySelector('#event-section');
 const sectionTickets = document.querySelector('#tickets-section');
 const sectionNews = document.querySelector('#news-scroll');
+const dropDown = document.querySelector('.drop-down');
 
 //btns
 const btnSctollTo = document.querySelector('.btn-scroll-to');
@@ -14,6 +15,7 @@ const btnAbout = document.querySelector('.about-link');
 const btnEvent = document.querySelector('.event-link');
 const btnTickets = document.querySelector('.tickets-link');
 const btnNews = document.querySelector('.news-link');
+const btnDropDown = document.querySelector('.btn-footer');
 
 //slider first
 const slidesFirst = document.querySelectorAll('.slide');
@@ -25,7 +27,7 @@ const slideCount = document.querySelector('.slider-count');
 const slidesSecond = document.querySelectorAll('.slide-img');
 const btnSlideSecondRight = document.querySelector('.arrow-slider-img-right');
 const btnSlideSecondLeft = document.querySelector('.arrow-slider-img-left');
-//
+//slider third
 const slidesThird = document.querySelectorAll('.slide-jhon');
 const btnSlideThirdRight = document.querySelector('.john-doe-arrow-right');
 const btnSlideThirdLeft = document.querySelector('.john-doe-arrow-left');
@@ -50,6 +52,7 @@ btnTickets.addEventListener('click', function () {
 btnNews.addEventListener('click', function () {
   sectionNews.scrollIntoView({ behavior: 'smooth' });
 });
+
 //First colloseum
 const maxSlide = slidesFirst.length;
 let curSlide = 0;
@@ -190,24 +193,6 @@ allSections.forEach(function (section) {
   section.classList.add('section-hidden');
 });
 
-// reveal section intersection
-// const allSelections = document.querySelectorAll('.section');
-// const revealSection = function (entries, observer) {
-//   const [entry] = entries;
-//   if (!entry.isIntersecting) return;
-//   entry.target.classList.remove('section-hidden');
-//   observer.unobserve(entry.target);
-// };
-
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.15,
-// });
-// allSelections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add('section-hidden');
-// });
-
 const mobileNav = document.querySelector('.hero_nav');
 const openIcon = document.querySelector('.hamburger-nav-open');
 const closeIcon = document.querySelector('.hamburger-nav-close');
@@ -230,9 +215,15 @@ const navPopOut = function () {
 btnMobile.addEventListener('click', function () {
   mobileNav.classList.toggle('mobile-hidden');
   navPopIn(1);
-  //just so i can change icons
   openIcon.classList.toggle('open');
   closeIcon.classList.toggle('close');
   nav.classList.toggle('nav-mobile');
   navPopOut();
+});
+
+// dropDown
+// btnDropDown
+
+btnDropDown.addEventListener('click', function () {
+  dropDown.classList.toggle('drop-down-hidden');
 });

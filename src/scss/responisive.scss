@@ -216,6 +216,20 @@
   .hero_nav {
     width: 100%;
   }
+  .slide-text-curved-1 {
+    transform: rotate(-5deg) translate(0%);
+  }
+  .slide-text-curved-2 {
+    background-color: #831adc;
+    transform: rotate(2deg) translateY(1rem) translateX(80%);
+  }
+  .drop-down {
+    top: 110%;
+  }
+  .center-btn-drop {
+    display: flex;
+    justify-content: center;
+  }
 }
 //576px
 @media (max-width: 36em) {
